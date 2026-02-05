@@ -42,3 +42,14 @@ print("Lause1 keskmine täishäälikute osakaal:", np.mean(osakaal1))
 print("Lause2 keskmine täishäälikute osakaal:", np.mean(osakaal2))
 
 #Võrrelge t-testiga kahe teksti sõnade täishäälikute osakaale
+from scipy.stats import ttest_ind
+
+res = ttest_ind(osakaal1, osakaal2)
+
+print("T-test täishäälikute osakaaludele:")
+print("t-statistic:", res.statistic)
+print("p-value:", res.pvalue)
+
+import statsmodels.stats.api as sms
+cm = sms.CompareMeans(sms.DescrStatsW([3, 5, 4]), sms.DescrStatsW([12, 16, 14]))
+print(cm.tconfint_diff(usevar='unequal'))
