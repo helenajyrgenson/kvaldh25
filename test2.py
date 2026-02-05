@@ -4,6 +4,10 @@ import string
 lause1 = "Kui arno isaga koolimajja jõudis olid tunnid juba alanud"
 lause2 = "Mu isamaa mu õnn ja rõõm, kui kaunis oled sa"
 
+#Lisage hümnile ja Kevadele kummalegi ka järgmine lause. Võrrelge p-väärtusi ühe ja kahe lause puhul
+lause3 = "Arno roomas vargsi mööda klassitoa seinaäärt suure kapi juurde, kus õpetaja Laur maakaarte ja muid koolitarbeid hoidis ning puges kapi alla peitu."
+lause4 = "Kui kaunis oled sa"
+
 def sonapikkused(lause: str):
     sonad = lause.split()
     # eemaldame kirjavahemärgid sõnade lõpust/algusest (nt "rõõm," -> "rõõm")
