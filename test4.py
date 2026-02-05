@@ -22,3 +22,23 @@ print("Kontroll:", sonad2[2], taish2[2])
 # keskmised
 print("Lause1 keskmine:", np.mean(taish1))
 print("Lause2 keskmine:", np.mean(taish2))
+
+#täishäälikute osakaal
+def taishaalikute_osakaal(sona):
+    sona = sona.lower()
+    taish = len([t for t in sona if t in the])
+    kokku = len([t for t in sona if t.isalpha()])
+    return taish / kokku if kokku > 0 else 0
+
+osakaal1 = [taishaalikute_osakaal(s) for s in sonad1]
+osakaal2 = [taishaalikute_osakaal(s) for s in sonad2]
+
+print("Näide:", sonad1[3], "→ osakaal:", osakaal1[3])
+print("Näide:", sonad2[2], "→ osakaal:", osakaal2[2])
+
+import numpy as np
+
+print("Lause1 keskmine täishäälikute osakaal:", np.mean(osakaal1))
+print("Lause2 keskmine täishäälikute osakaal:", np.mean(osakaal2))
+
+#Võrrelge t-testiga kahe teksti sõnade täishäälikute osakaale
