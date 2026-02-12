@@ -1,1 +1,0 @@
-print(prop.test (20, 120))
