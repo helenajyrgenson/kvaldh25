@@ -24,8 +24,11 @@ print(prop.test(c(147,139), c(1000,1000))) # 147, 139.....jne on toetajad. 1000,
 # Näiteks:
 print(prop.test(c(1470,1390), c(10000,10000), conf.level=0,95)) #Siin see conf.leveli asi ei tööta???
 
-#Nimede loendi näide. Regex, regular expressions. Google sheets (countif(B1:B586, "=q"))...vst oli q, võis olla ka g. Sõna viimased tähed (midA1586, len(A1586), 1) - google sheets
+#Nimede loendi näide. Regex, regular expressions. Google sheets (countif(B1:B586, "=q"))...vst oli q, võis olla ka g. Sõna viimased tähed (midA1586, len(A1586), 1). Meeste ja naistega,  - google sheets
 
-print(prop.test(644,))
+print(prop.test(644,1586))
 
+print(prop.test (13,1342))
+
+print(prop.test (c(644, 13), c(1586, 1342))) #need arvud on et ta midagi nimedega tegi, vahemikud, vaatas palju on a tähega mehi ja naisi, leidis need google sheetsis ja need arvud on sealt, näidetena
 
