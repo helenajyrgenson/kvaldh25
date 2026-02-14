@@ -1,0 +1,27 @@
+# PROPORTSIOONIDE TEST – TLÜ koor vs TLÜ üldiselt
+
+#KOOR
+koor_rahvusvahelised = 15
+koor_kokku = 35
+
+print(prop.test(koor_rahvusvahelised, koor_kokku))
+
+vahemik_koor = prop.test(koor_rahvusvahelised, koor_kokku)$conf.int
+print(vahemik_koor)
+print(vahemik_koor * koor_kokku)
+
+
+# TLÜ ÜLDISELT 
+tlu_rahvusvahelised = 1200
+tlu_kokku = 8000
+
+print(prop.test(tlu_rahvusvahelised, tlu_kokku))
+
+vahemik_tlu = prop.test(tlu_rahvusvahelised, tlu_kokku)$conf.int
+print(vahemik_tlu)
+print(vahemik_tlu * tlu_kokku)
+
+
+# KAHE ANDMESTIKU VÕRDLUS
+print(prop.test(c(koor_rahvusvahelised, tlu_rahvusvahelised),
+   c(koor_kokku, tlu_kokku)))
