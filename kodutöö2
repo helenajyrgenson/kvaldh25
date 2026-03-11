@@ -11,7 +11,7 @@ print(vahemik_koor)
 print(vahemik_koor * koor_kokku)
 
 
-# TLÜ ÜLDISELT 
+# TLÜ ÜLDISELT jjj
 tlu_rahvusvahelised = 1200
 tlu_kokku = 8000
 
